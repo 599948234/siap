@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 内容="width=device-width, initial-scale=1.0">
+    <title>收益率信息 - 股票指数分析平台</title>
+    <!-- 设置默认值 -->
+    <link rel="stylesheet" href="./total.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <div class="main-title">
+                股票指数分析平台
+            </div>
+            <div class="second-title">
+                收益率
+            </div>
+            <div class="search">
+                <input type="text" placeholder="请输入股票名称或代码">
+                <button>搜索</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="homePage">
+            <!-- 左导航栏 -->
+            <div class="navbar">
+                <ul>
+                    <li><a href="./index.html">返回</a></li>
+                    <li><a href="./index_introduction.html">指数简介</a></li>
+                    <li><a href="./constituent_stock.html">成分股</a></li>
+                    <li><a href="./historical_data.html">历史数据</a></li>
+                </ul>
+            </div>
+            <!-- 右侧内容 -->
+            <div class="text">
+                <div class="yield-info">
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>收益率ID</th>
+                                    <th>所属指数ID</th>
+                                    <th>周期类型</th>
+                                    <th>计算起始日期</th>
+                                    <th>计算结束日期</th>
+                                    <th>收益率</th>
+                                    <th>年化波动率</th>
+                                    <th>最大回撤</th>
+                                    <th>夏普比率</th>
+                                    <th>计算时间</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1001</td>
+                                    <td>000001</td>
+                                    <td>月度</td>
+                                    <td>2023-09-01</td>
+                                    <td>2023-09-30</td>
+                                    <td class="positive">3.25%</td>
+                                    <td>12.45%</td>
+                                    <td>2.15%</td>
+                                    <td class="positive">0.85</td>
+                                    <td>2023-10-01 02:15:30</td>
+                                </tr>
+                                <tr>
+                                    <td>1002</td>
+                                    <td>399001</td>
+                                    <td>季度</td>
+                                    <td>2023-07-01</td>
+                                    <td>2023-09-30</td>
+                                    <td class="positive">+5.68%</td>
+                                    <td>15.72%</td>
+                                    <td>4.32%</td>
+                                    <td class="positive">0.92</td>
+                                    <td>2023-10-01 03:22:15</td>
+                                </tr>
+                                <tr>
+                                    <td>1003</td>
+                                    <td>000300</td>
+                                    <td>年度</td>
+                                    <td>2022-10-01</td>
+                                    <td>2023-09-30</td>
+                                    <td class="positive">+12.45%</td>
+                                    <td>18.36%</td>
+                                    <td>6.78%</td>
+                                    <td class="positive">1.15</td>
+                                    <td>2023-10-01 04:30:45</td>
+                                </tr>
+                                <tr>
+                                    <td>1004</td>
+                                    <td>399006</td>
+                                    <td>月度</td>
+                                    <td>2023-09-01</td>
+                                    <td>2023-09-30</td>
+                                    <td class="negative">-1.25%</td>
+                                    <td>22.18%</td>
+                                    <td>8.45%</td>
+                                    <td class="negative">-0.18</td>
+                                    <td>2023-10-01 02:45:10</td>
+                                </tr>
+                            <tbody>
+                                <tr>
+                                    <td>1001</td>
+                                    <td>000001</td>
+                                    <td>月度</td>
+                                    <td>2023-09-01</td>
+                                    <td>2023-09-30</td>
+                                    <td class="positive">3.25%</td>
+                                    <td>12.45%</td>
+                                    <td>2.15%</td>
+                                    <td class="positive">0.85</td>
+                                    <td>2023-10-01 02:15:30</td>
+                                </tr>
+                                <tr>
+                                    <td>1002</td>
+                                    <td>399001</td>
+                                    <td>季度</td>
+                                    <td>2023-07-01</td>
+                                    <td>2023-09-30</td>
+                                    <td class="positive">+5.68%</td>
+                                    <td>15.72%</td>
+                                    <td>4.32%</td>
+                                    <td class="positive">0.92</td>
+                                    <td>2023-10-01 03:22:15</td>
+                                </tr>
+                                <tr>
+                                    <td>1003</td>
+                                    <td>000300</td>
+                                    <td>年度</td>
+                                    <td>2022-10-01</td>
+                                    <td>2023-09-30</td>
+                                    <td class="positive">+12.45%</td>
+                                    <td>18.36%</td>
+                                    <td>6.78%</td>
+                                    <td class="positive">1.15</td>
+                                    <td>2023-10-01 04:30:45</td>
+                                </tr>
+                                <tr>
+                                    <td>1004</td>
+                                    <td>399006</td>
+                                    <td>月度</td>
+                                    <td>2023-09-01</td>
+                                    <td>2023-09-30</td>
+                                    <td class="negative">-1.25%</td>
+                                    <td>22.18%</td>
+                                    <td>8.45%</td>
+                                    <td class="negative">-0.18</td>
+                                    <td>2023-10-01 02:45:10</td>
+                                </tr>
+                                <tr>
+                                    <td>1005</td>
+                                    <td>000016</td>
+                                    <td>月度</td>
+                                    <td>2023-09-01</td>
+                                    <td>2023-09-30</td>
+                                    <td class="positive">2.85%</td>
+                                    <td>10.25%</td>
+                                    <td>1.95%</td>
+                                    <td class="positive">0.78</td>
+                                    <td>2023-10-01 05:12:20</td>
+                                </tr>
+                                <tr>
+                                    <td>1006</td>
+                                    <td>399300</td>
+                                    <td>季度</td>
+                                    <td>2023-07-01</td>
+                                    <td>2023-09-30</td>
+                                    <td class="negative">-0.75%</td>
+                                    <td>17.85%</td>
+                                    <td>5.25%</td>
+                                    <td class="negative">-0.04</td>
+                                    <td>2023-10-01 06:30:45</td>
+                                </tr>
+                                <tr>
+                                    <td>1007</td>
+                                    <td>000010</td>
+                                    <td>年度</td>
+                                    <td>2022-10-01</td>
+                                    <td>2023-09-30</td>
+                                    <td class="positive">8.95%</td>
+                                    <td>14.65%</td>
+                                    <td>3.85%</td>
+                                    <td class="positive">0.98</td>
+                                    <td>2023-10-01 07:15:30</td>
+                                </tr>
+                                <tr>
+                                    <td>1008</td>
+                                    <td>399666</td>
+                                    <td>月度</td>
+                                    <td>2023-09-01</td>
+                                    <td>2023-09-30</td>
+                                    <td class="positive">1.55%</td>
+                                    <td>19.75%</td>
+                                    <td>7.25%</td>
+                                    <td class="positive">0.25</td>
+                                    <td>2023-10-01 08:20:10</td>
+                                </tr>
+                                <tr>
+                                    <td>1009</td>
+                                    <td>000688</td>
+                                    <td>季度</td>
+                                    <td>2023-07-01</td>
+                                    <td>2023-09-30</td>
+                                    <td class="positive">4.35%</td>
+                                    <td>21.45%</td>
+                                    <td>6.15%</td>
+                                    <td class="positive">0.65</td>
+                                    <td>2023-10-01 09:45:25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

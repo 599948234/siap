@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>指数对比 - 股票指数分析平台</title>
+    <!-- 设置默认值 -->
+    <link rel="stylesheet" href="./total.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <div class="main-title">
+                股票指数分析平台
+            </div>
+            <div class="second-title">
+                指数对比
+            </div>
+            <div class="search">
+                <input type="text" placeholder="请输入股票名称或代码">
+                <button>搜索</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="homePage">
+            <!-- 左导航栏 -->
+            <div class="navbar">
+                <ul>
+                    <li><a href="./index.html">指数市场</a></li>
+                    <li><a href="./login.html">登录</a></li>
+                    <li><a href="./register.html">注册</a></li>
+                    <li><a href="./my_collection.html">我的收藏</a></li>
+                </ul>
+            </div>
+            <!-- 右侧内容 -->
+            <div class="text">
+                <div class="compare-container">
+                    <div class="compare-options">
+                        <div class="compare-option">
+                            <label for="basic-index">基准指数</label>
+                            <select name="basic-index" id="basic-index">
+                                <option value="">上证指数</option>
+                                <option value="">深证成指</option>
+                                <option value="">沪深300</option>
+                            </select>
+                        </div>
+                        <div class="compare-option">
+                            <label for="compare-index">对比指数</label>
+                            <select name="compare-index" id="compare-index">
+                                <option value="">上证指数</option>
+                                <option value="">深证成指</option>
+                                <option value="">沪深300</option>
+                            </select>
+                        </div>
+                        <div class="compare-option">
+                            <label for="time-range">时间范围</label>
+                            <select name="time-range" id="time-range">
+                                <option>近一日</option>
+                                <option>近一周</option>
+                                <option>近一月</option>
+                                <option>近一年</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-options">
+                        <div class="chart-option">
+                            <input type="checkbox" id="open-price" checked>
+                            <label for="open-price">开盘价</label>
+                        </div>
+                        <div class="chart-option">
+                            <input type="checkbox" id="close-price" checked>
+                            <label for="close-price">收盘价</label>
+                        </div>
+                        <div class="chart-option">
+                            <input type="checkbox" id="volatility">
+                            <label for="volatility">波动率</label>
+                        </div>
+                        <div class="chart-option">
+                            <input type="checkbox" id="volume">
+                            <label for="volume">成交量</label>
+                        </div>
+                        <button type="button" class="btn btn-secondary">生成图表</button>
+                        <button type="reset" class="btn btn-secondary">重置</button>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <span>指数对比图表将在此处显示</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
